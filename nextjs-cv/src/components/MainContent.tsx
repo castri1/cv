@@ -29,8 +29,9 @@ const SectionHeader = ({ title }: { title: string }) => (
     className="section-header"
     style={{
       fontFamily: "var(--cv-font-code)",
-      fontSize: 12,
-      color: "#fff",
+      fontSize: 13,
+      fontWeight: 700,
+      color: "var(--green-primary)",
     }}
   >
     {sh(title)}
@@ -131,7 +132,7 @@ export default function MainContent({ data }: Props) {
                 {dateBrackets(role.date)}
               </span>
             </div>
-            <div style={{ fontSize: 13, color: "var(--text-secondary)" }}>
+            <div style={{ fontSize: 13, fontWeight: 700, color: "var(--text-secondary)" }}>
               {companyLine(role.company, role.location)}
             </div>
             <div
@@ -236,7 +237,7 @@ export default function MainContent({ data }: Props) {
                   color: "var(--green-primary)",
                 }}
               >
-                [!]
+                {ach.title ? `[${ach.title.toLowerCase()}]` : "[!]"}
               </div>
               <div
                 style={{

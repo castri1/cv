@@ -34,9 +34,6 @@
   background: #E5E7EB;
 }
 
-[data-theme="light"] .section-header {
-  color: #1A1A1A;
-}
 
 @layer base {
   * {

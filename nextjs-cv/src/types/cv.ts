@@ -55,6 +55,7 @@ export interface Education {
 }
 
 export interface Achievement {
+  title: string;
   text: string;
 }
 

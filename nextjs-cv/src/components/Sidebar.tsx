@@ -78,8 +78,9 @@ export default function Sidebar({ data }: Props) {
       className="section-header"
       style={{
         fontFamily: "var(--cv-font-code)",
-        fontSize: 12,
-        color: "var(--text-primary)",
+        fontSize: 13,
+        fontWeight: 700,
+        color: "var(--green-primary)",
         marginBottom: 0,
       }}
     >
