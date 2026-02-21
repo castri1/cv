@@ -51,15 +51,21 @@
     "summary": "Engineering leader with 13+ years of experience spanning software development, DevSecOps, and startup co-founding. Dual-degree engineer (Colombia & France) with a Master's in Business Intelligence. Proven track record building engineering teams from the ground up, leading cloud-native transformations on AWS, and driving technical strategy across startups and consulting firms. Trilingual professional (Spanish, English, French) with deep international experience across Latin America and Europe.",
     "experience": [
       {
-        "title": "Co-Founder / VP. of SWE & DevSecOps",
+        "title": "Co-Founder / VP. of SWE",
         "date": "2021 - Present",
         "company": "Melonn",
         "location": "Medellín, Colombia",
         "bullets": [
-          "Co-founded logistics-tech startup, architecting the engineering organization and cloud infrastructure from day one on AWS",
+          "Co-founded logistics-tech startup, architecting the engineering organization and cloud-native infrastructure from day one on AWS",
           "Established DevSecOps practices, CI/CD pipelines, and security-first development culture across the engineering team",
-          "Designed scalable microservices platform powering e-commerce fulfillment operations across Latin America",
-          "Led engineering hiring and team growth, defining technical roadmap, architecture standards, and agile processes"
+          "Co-led a company-wide organizational and architectural transformation from a monolithic structure to a domain-driven microservices ecosystem, enabling autonomous squads and unlocking parallel product development and regional scalability.",
+          "Operated across multiple leadership roles—including Cloud Architect and Product Manager for Transportation, Monetization, and Support domains—designing and delivering products that improved operational efficiency and enabled new service capabilities.",
+          "Defined and implemented a standardized, repeatable technology stack and deployment model, enabling rapid environment replication, automation-first operations, and consistent onboarding of new teams and services.",
+          "Partnered with operations, internal and external clients to translate logistics, support and fulfillment challenges into scalable technical solutions; led technical due diligence processes with strategic partners and customers.",
+          "Built the engineering function from the ground up: hired and mentored 25+ engineers, defined role architecture and career ladders",
+          "Designed and institutionalized the development lifecycle, aligning engineering execution with product management through agile practices, quarterly planning, and OKR-driven delivery.",
+          "Architected and implemented the company’s disaster recovery plan and reliability strategy.",
+          "Driving cultural adoption through hands-on leadership, mentoring teams on how to incorporate AI into daily development, decision-making, and automation processes."
         ]
       },
       {
