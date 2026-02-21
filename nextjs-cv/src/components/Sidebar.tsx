@@ -1,4 +1,5 @@
 import type { Sidebar as SidebarType, ContactItem } from "@/types/cv";
+import SidebarShell from "./SidebarShell";
 
 // Terminal formatting helpers
 const tc = (s: string) => s.toLowerCase().replace(/ /g, "_");
@@ -87,18 +88,7 @@ export default function Sidebar({ data }: Props) {
   );
 
   return (
-    <aside
-      style={{
-        width: 320,
-        minWidth: 320,
-        background: "var(--bg-elevated)",
-        borderRight: "1px solid var(--border-primary)",
-        padding: "40px 32px",
-        display: "flex",
-        flexDirection: "column",
-        gap: 32,
-      }}
-    >
+    <SidebarShell>
       {/* Name block */}
       <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
         <div
@@ -328,6 +318,6 @@ export default function Sidebar({ data }: Props) {
           </div>
         ))}
       </div>
-    </aside>
+    </SidebarShell>
   );
 }

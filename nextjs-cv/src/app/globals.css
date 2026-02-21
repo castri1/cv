@@ -72,19 +72,119 @@
   color: var(--green-primary);
 }
 
+/* Mobile top bar hidden on desktop */
+.mobile-topbar {
+  display: none;
+}
+
+/* Hamburger hidden on desktop */
+.sidebar-hamburger {
+  display: none;
+}
+
+/* Backdrop hidden on desktop */
+.sidebar-backdrop {
+  display: none;
+}
+
 @media (max-width: 900px) {
+  .mobile-topbar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    background: var(--bg-page);
+    border-bottom: 1px solid var(--border-primary);
+    z-index: 1050;
+  }
+
+  .theme-toggle {
+    z-index: 1100 !important;
+    top: 8px !important;
+    right: 20px !important;
+    height: 36px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border-radius: 4px;
+  }
+
+  .cv-page-wrapper {
+    padding-top: 60px !important;
+  }
+
   .cv-layout {
     flex-direction: column !important;
   }
 
-  .cv-layout aside {
-    width: 100% !important;
-    min-width: 0 !important;
-    border-right: none !important;
-    border-bottom: 1px solid var(--border-primary) !important;
-  }
-
   .cv-layout main {
     padding: 32px 24px !important;
+  }
+
+  /* Hamburger button */
+  .sidebar-hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 8px;
+    left: 20px;
+    z-index: 1100;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--green-primary);
+    border-radius: 4px;
+    background: var(--bg-elevated);
+    color: var(--green-primary);
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .sidebar-hamburger:hover {
+    background: var(--green-primary);
+    color: var(--bg-page);
+  }
+
+  /* Backdrop overlay */
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 1199;
+    background: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.2s ease;
+  }
+
+  /* Sidebar slide-in panel */
+  .sidebar-panel {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1200;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-right: 1px solid var(--border-primary) !important;
+    width: min(320px, 85vw) !important;
+    min-width: 0 !important;
+  }
+
+  .sidebar-panel--open {
+    transform: translateX(0);
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+
+@media print {
+  .sidebar-hamburger {
+    display: none !important;
   }
 }

@@ -31,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light" className={`${ibmPlexMono.variable} ${jetbrainsMono.variable}`}>
       <body style={{ fontFamily: "var(--font-ibm-plex-mono), monospace" }}>
+        <div className="mobile-topbar" />
         <ThemeToggle />
         {children}
       </body>

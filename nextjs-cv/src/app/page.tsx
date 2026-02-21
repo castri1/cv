@@ -39,6 +39,7 @@ export default function Home() {
 
   return (
     <div
+      className="cv-page-wrapper"
       style={{
         display: "flex",
         justifyContent: "center",
