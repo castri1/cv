@@ -233,25 +233,37 @@ export default function Sidebar({ data }: Props) {
       {/* Certifications */}
       <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
         <SectionHeader title="Certifications" />
-        {data.certifications.map((cert, i) => (
-          <div
-            key={i}
-            style={{ display: "flex", flexDirection: "column", gap: 2 }}
-          >
+        {data.certifications.map((cert, i) => {
+          const match = cert.name.toLowerCase().match(/^(\[[^\]]+\])\s*(.*)$/);
+          return (
             <div
-              style={{
-                fontFamily: "var(--cv-font-code)",
-                fontSize: 11,
-                color: "var(--text-primary)",
-              }}
+              key={i}
+              style={{ display: "flex", flexDirection: "column", gap: 2 }}
             >
-              {cert.name.toLowerCase()}
+              <div
+                style={{
+                  fontFamily: "var(--cv-font-code)",
+                  fontSize: 11,
+                  color: "var(--text-primary)",
+                }}
+              >
+                {match ? (
+                  <>
+                    <span style={{ fontWeight: 700 }}>{match[1]}</span>
+                    {" " + match[2]}
+                  </>
+                ) : (
+                  cert.name.toLowerCase()
+                )}
+              </div>
+              {cert.date && (
+                <div style={{ fontSize: 11, color: "var(--text-secondary)" }}>
+                  {cert.date}
+                </div>
+              )}
             </div>
-            <div style={{ fontSize: 11, color: "var(--text-secondary)" }}>
-              {cert.date}
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       <Divider />

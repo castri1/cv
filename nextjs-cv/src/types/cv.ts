@@ -64,7 +64,7 @@ export interface Main {
     name: string;
     subtitle: string;
   };
-  summary: string;
+  summary: string[];
   experience: Experience[];
   education: Education[];
   achievements: Achievement[];

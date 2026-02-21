@@ -84,15 +84,18 @@ export default function MainContent({ data }: Props) {
       {/* Summary */}
       <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
         <SectionHeader title="Professional Summary" />
-        <p
-          style={{
-            fontSize: 13,
-            color: "var(--text-secondary)",
-            lineHeight: 1.7,
-          }}
-        >
-          {data.summary.toLowerCase()}
-        </p>
+        {data.summary.map((para, i) => (
+          <p
+            key={i}
+            style={{
+              fontSize: 13,
+              color: "var(--text-secondary)",
+              lineHeight: 1.7,
+            }}
+          >
+            {para.toLowerCase()}
+          </p>
+        ))}
       </div>
 
       <Divider />
@@ -152,7 +155,7 @@ export default function MainContent({ data }: Props) {
                     lineHeight: 1.6,
                   }}
                 >
-                  {bulletPrefix(b)}
+                  <span style={{ fontWeight: 700, color: "var(--green-primary)" }}>++</span>{" " + b.toLowerCase()}
                 </div>
               ))}
             </div>

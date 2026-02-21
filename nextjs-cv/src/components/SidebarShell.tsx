@@ -40,31 +40,18 @@ export default function SidebarShell({
         onClick={() => setOpen((v) => !v)}
         aria-label={open ? "Close menu" : "Open menu"}
       >
-        <svg
-          width={20}
-          height={20}
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={2}
-          strokeLinecap="round"
-          role="img"
+        <span
           aria-hidden
+          style={{
+            fontFamily: "var(--cv-font-code)",
+            fontSize: 22,
+            fontWeight: 700,
+            lineHeight: 1,
+            display: "block",
+          }}
         >
-          <title>Menu</title>
-          {open ? (
-            <>
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </>
-          ) : (
-            <>
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </>
-          )}
-        </svg>
+          {open ? "×" : "+"}
+        </span>
       </button>
 
       {/* Backdrop */}
