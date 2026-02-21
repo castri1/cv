@@ -31,7 +31,7 @@ export default function Sidebar({ data }: Props) {
       style={{
         fontFamily: "var(--cv-font-code)",
         fontSize: 12,
-        color: "#fff",
+        color: "var(--text-primary)",
         marginBottom: 0,
       }}
     >
