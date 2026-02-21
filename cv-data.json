@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Daniel Castrillon Cuartas — CV"
+  },
+  "sidebar": {
+    "nameBlock": {
+      "name": "Daniel Castrillon",
+      "title": "Co-Founder / VP of SWE",
+      "subtitle": "DevSecOps & Engineering Leadership"
+    },
+    "contact": [
+      { "type": "email", "value": "castri1@hotmail.com" },
+      { "type": "phone", "value": "+57 312 2932385" },
+      { "type": "location", "value": "Medellín, Colombia" },
+      { "type": "link", "value": "github.com/castri1", "url": "https://github.com/castri1" },
+      { "type": "link", "value": "linkedin.com/in/danielcastrillon", "url": "https://linkedin.com/in/danielcastrillon" }
+    ],
+    "keyMetrics": [
+      { "value": "15+", "label": "Years in Engineering" },
+      { "value": "[TODO]", "label": "Engineers Managed" },
+      { "value": "$85M", "label": "[Your Metric Here]", "accent": true },
+      { "value": "[TODO]", "label": "[Your Metric Here]" }
+    ],
+    "techStack": [
+      { "skills": ["AWS", "React", ".NET"], "primary": true },
+      { "skills": ["JavaScript", "Node.js", "D3.js"] },
+      { "skills": ["DevSecOps", "GenAI/LLM", "CI/CD"] },
+      { "skills": ["Docker", "Python", "SQL"] }
+    ],
+    "certifications": [
+      { "name": "[MIT] Innovation & Acceleration", "date": "2022" },
+      { "name": "[AWS] Certified Developer Associate", "date": "2020" },
+      { "name": "[AWS] Cloud Architect Nanodegree", "date": "2020" }
+    ],
+    "leadershipAreas": [
+      { "text": "Engineering Strategy", "color": "green" },
+      { "text": "Platform Architecture", "color": "green" },
+      { "text": "DevSecOps & Cloud", "color": "cyan" },
+      { "text": "Startup Co-Founding", "color": "cyan" },
+      { "text": "Team Scaling & Hiring", "color": "amber" },
+      { "text": "International Experience", "color": "amber" }
+    ],
+    "languages": [
+      { "text": "Spanish (Native)", "color": "green" },
+      { "text": "English (Professional)", "color": "green" },
+      { "text": "French (Professional)", "color": "cyan" }
+    ]
+  },
+  "main": {
+    "header": {
+      "name": "Daniel Castrillon Cuartas",
+      "subtitle": "Co-Founder & VP of Software Engineering, DevSecOps"
+    },
+    "summary": "Engineering leader with 12+ years of experience spanning software development, DevSecOps, and startup co-founding. Dual-degree engineer (Colombia & France) with a Master's in Business Intelligence. Proven track record building engineering teams from the ground up, leading cloud-native transformations on AWS, and driving technical strategy across startups and consulting firms. Trilingual professional (Spanish, English, French) with deep international experience across Latin America and Europe.",
+    "experience": [
+      {
+        "title": "Co-Founder / Director of SWE & DevSecOps",
+        "date": "2021 - Present",
+        "company": "Melonn",
+        "location": "Medellín, Colombia",
+        "bullets": [
+          "Co-founded logistics-tech startup, architecting the engineering organization and cloud infrastructure from day one on AWS",
+          "Established DevSecOps practices, CI/CD pipelines, and security-first development culture across the engineering team",
+          "Designed scalable microservices platform powering e-commerce fulfillment operations across Latin America",
+          "Led engineering hiring and team growth, defining technical roadmap, architecture standards, and agile processes"
+        ]
+      },
+      {
+        "title": "Director of Software Engineering",
+        "date": "2018 - 2021",
+        "company": "Mutek",
+        "location": "Medellín, Colombia",
+        "bullets": [
+          "Directed software engineering team delivering digital products for diverse client portfolio",
+          "Drove technical strategy, architecture decisions, and cloud migration initiatives",
+          "Mentored engineering leads and established agile development practices across the organization",
+          "Oversaw end-to-end product delivery lifecycle from requirements to production deployment"
+        ]
+      },
+      {
+        "title": "Senior .NET Developer",
+        "date": "2017 - 2018",
+        "company": "MAS Global Consulting",
+        "location": "Colombia",
+        "bullets": [
+          "Developed enterprise applications using .NET ecosystem for US-based consulting clients",
+          "Designed and implemented backend services and RESTful APIs for business-critical systems",
+          "Collaborated with distributed engineering teams across Colombia and the United States"
+        ]
+      },
+      {
+        "title": "Co-Founder",
+        "date": "2014 - 2017",
+        "company": "Vaado Information Technologies",
+        "location": null,
+        "bullets": [
+          "Co-founded technology company delivering custom software solutions and IT consulting services",
+          "Led technical development, client delivery, and built the engineering team from scratch"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master's, Business Intelligence",
+        "school": "Universitat de Barcelona",
+        "location": "Spain",
+        "date": "2015 - 2016"
+      },
+      {
+        "degree": "Mechatronics Engineering",
+        "school": "Universidad EIA",
+        "location": "Medellín, Colombia (Dual Degree w/ ENIM, France)",
+        "date": "2006 - 2012"
+      }
+    ],
+    "achievements": [
+      { "text": "[TODO] Add your notable achievement here" },
+      { "text": "[TODO] Add your notable achievement here" },
+      { "text": "[TODO] Add your notable achievement here" }
+    ]
+  }
+}

@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Castrillon Cuartas — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-page: #0A0A0A;
+      --bg-elevated: #0F0F0F;
+      --border-primary: #2a2a2a;
+      --green-primary: #10B981;
+      --cyan-info: #06B6D4;
+      --amber-warning: #F59E0B;
+      --text-primary: #FAFAFA;
+      --text-secondary: #6B7280;
+      --text-tertiary: #4B5563;
+    }
+
+    [data-theme="light"] {
+      --bg-page: #FAFAFA;
+      --bg-elevated: #F0F0F0;
+      --border-primary: #D1D5DB;
+      --green-primary: #059669;
+      --cyan-info: #0891B2;
+      --amber-warning: #D97706;
+      --text-primary: #1A1A1A;
+      --text-secondary: #4B5563;
+      --text-tertiary: #6B7280;
+    }
+
+    [data-theme="light"] body {
+      background: #E5E7EB;
+    }
+
+    [data-theme="light"] .section-header {
+      color: #1A1A1A;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #111;
+      font-family: 'IBM Plex Mono', monospace;
+      color: var(--text-primary);
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--green-primary);
+      background: transparent;
+      border: 1px solid var(--green-primary);
+      padding: 4px 12px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .theme-toggle:hover {
+      background: var(--green-primary);
+      color: var(--bg-page);
+    }
+
+    @media print {
+      body { padding: 0; background: var(--bg-page); }
+      .cv-page { border: none; box-shadow: none; }
+      .theme-toggle { display: none; }
+    }
+
+    .cv-page {
+      width: 1100px;
+      max-width: 100%;
+      background: var(--bg-page);
+      border: 1px solid var(--green-primary);
+      border-top-width: 3px;
+      display: flex;
+      min-height: 0;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      width: 320px;
+      min-width: 320px;
+      background: var(--bg-elevated);
+      border-right: 1px solid var(--border-primary);
+      padding: 40px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .name-block {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .prompt {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--green-primary);
+    }
+
+    .title-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--text-primary);
+    }
+
+    .subtitle-text {
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border-primary);
+    }
+
+    .section-header {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #fff;
+      margin-bottom: 0;
+    }
+
+    /* Contact */
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contact-icon {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--green-primary);
+    }
+
+    .contact-text {
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .contact-text a {
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+
+    .contact-text a:hover {
+      color: var(--green-primary);
+    }
+
+    /* Key Metrics */
+    .key-metrics {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .metric-card {
+      border: 1px solid var(--border-primary);
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .metric-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .metric-val.accent {
+      color: var(--green-primary);
+    }
+
+    .metric-label {
+      font-size: 11px;
+      color: var(--text-secondary);
+    }
+
+    /* Tech Stack */
+    .tech-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .skill-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .skill-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      padding: 4px 10px;
+      border: 1px solid var(--border-primary);
+      color: var(--text-primary);
+    }
+
+    .skill-tag.primary {
+      border-color: var(--green-primary);
+      color: var(--green-primary);
+    }
+
+    /* Certifications */
+    .certifications {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .cert-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .cert-name {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-primary);
+    }
+
+    .cert-date {
+      font-size: 11px;
+      color: var(--text-secondary);
+    }
+
+    /* Leadership & Languages */
+    .list-section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .dot.green { background: var(--green-primary); }
+    .dot.cyan { background: var(--cyan-info); }
+    .dot.amber { background: var(--amber-warning); }
+
+    .list-item-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-primary);
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .main-content {
+      flex: 1;
+      padding: 40px 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      min-width: 0;
+    }
+
+    /* Header */
+    .header-section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-prompt {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--green-primary);
+    }
+
+    .header-name {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .header-sub {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .divider-green {
+      width: 100%;
+      height: 1px;
+      background: var(--green-primary);
+    }
+
+    /* Summary */
+    .summary {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .summary-body {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* Experience */
+    .experience {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .role {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .role-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .role-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .role-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--green-primary);
+      white-space: nowrap;
+    }
+
+    .role-company {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .role-bullets {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-left: 16px;
+    }
+
+    .bullet {
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Education */
+    .education {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .edu-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .edu-degree {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .edu-school {
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .edu-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--green-primary);
+      white-space: nowrap;
+    }
+
+    /* Achievements */
+    .achievements {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .ach-grid {
+      display: flex;
+      gap: 16px;
+    }
+
+    .ach-card {
+      flex: 1;
+      border: 1px solid var(--border-primary);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .ach-icon {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--green-primary);
+    }
+
+    .ach-text {
+      font-size: 11px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .cv-page {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        min-width: 0;
+        border-right: none;
+        border-bottom: 1px solid var(--border-primary);
+      }
+      .main-content {
+        padding: 32px 24px;
+      }
+      .ach-grid {
+        flex-direction: column;
+      }
+      .role-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+      .edu-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button id="theme-toggle" class="theme-toggle">[ light ]</button>
+  <div class="cv-page">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main-content" id="main-content"></main>
+  </div>
+  <div id="loading" style="position:fixed;inset:0;background:var(--bg-page);display:flex;align-items:center;justify-content:center;z-index:9999;font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--green-primary);">loading cv data...</div>
+  <script>
+    // === Theme toggle ===
+    const toggle = document.getElementById('theme-toggle');
+    const saved = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', saved);
+    updateLabel(saved);
+
+    toggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      updateLabel(next);
+    });
+
+    function updateLabel(theme) {
+      toggle.textContent = theme === 'dark' ? '[ light ]' : '[ dark ]';
+    }
+
+    // === Terminal formatting utilities ===
+    function terminalCase(str) {
+      return str.toLowerCase().replace(/ /g, '_');
+    }
+
+    function sectionHeader(str) {
+      return '// ' + terminalCase(str);
+    }
+
+    function promptPrefix(str) {
+      return '> ' + terminalCase(str);
+    }
+
+    function companyLine(company, location) {
+      const base = '$ ' + company.toLowerCase();
+      return location ? base + ' \u2014 ' + location.toLowerCase() : base;
+    }
+
+    function bulletPrefix(str) {
+      return '++ ' + str.toLowerCase();
+    }
+
+    function dateBrackets(str) {
+      return '[' + str.toLowerCase() + ']';
+    }
+
+    function el(tag, cls, text) {
+      const e = document.createElement(tag);
+      if (cls) e.className = cls;
+      if (text !== undefined) e.textContent = text;
+      return e;
+    }
+
+    function divider(green) {
+      return el('div', green ? 'divider-green' : 'divider');
+    }
+
+    // === Sidebar render functions ===
+    function renderNameBlock(data) {
+      const block = el('div', 'name-block');
+      block.appendChild(el('div', 'prompt', promptPrefix(data.name)));
+      block.appendChild(el('div', 'title-text', terminalCase(data.title)));
+      block.appendChild(el('div', 'subtitle-text', '// ' + data.subtitle.toLowerCase()));
+      return block;
+    }
+
+    function renderContact(data) {
+      const section = el('div', 'contact-section');
+      section.appendChild(el('div', 'section-header', sectionHeader('Contact Info')));
+      data.forEach(item => {
+        const row = el('div', 'contact-row');
+        row.appendChild(el('span', 'contact-icon', '$'));
+        const text = el('span', 'contact-text');
+        if (item.type === 'link') {
+          const a = document.createElement('a');
+          a.href = item.url;
+          a.target = '_blank';
+          a.textContent = item.value;
+          text.appendChild(a);
+        } else {
+          text.textContent = item.value.toLowerCase();
+        }
+        row.appendChild(text);
+        section.appendChild(row);
+      });
+      return section;
+    }
+
+    function renderKeyMetrics(data) {
+      const section = el('div', 'key-metrics');
+      section.appendChild(el('div', 'section-header', sectionHeader('Key Metrics')));
+      data.forEach(metric => {
+        const card = el('div', 'metric-card');
+        const val = el('div', metric.accent ? 'metric-val accent' : 'metric-val', metric.value);
+        card.appendChild(val);
+        card.appendChild(el('div', 'metric-label', terminalCase(metric.label)));
+        section.appendChild(card);
+      });
+      return section;
+    }
+
+    function renderTechStack(data) {
+      const section = el('div', 'tech-stack');
+      section.appendChild(el('div', 'section-header', sectionHeader('Tech Stack')));
+      data.forEach(row => {
+        const rowEl = el('div', 'skill-row');
+        row.skills.forEach(skill => {
+          const tag = el('span', row.primary ? 'skill-tag primary' : 'skill-tag', skill.toLowerCase());
+          rowEl.appendChild(tag);
+        });
+        section.appendChild(rowEl);
+      });
+      return section;
+    }
+
+    function renderCertifications(data) {
+      const section = el('div', 'certifications');
+      section.appendChild(el('div', 'section-header', sectionHeader('Certifications')));
+      data.forEach(cert => {
+        const item = el('div', 'cert-item');
+        item.appendChild(el('div', 'cert-name', cert.name.toLowerCase()));
+        item.appendChild(el('div', 'cert-date', cert.date));
+        section.appendChild(item);
+      });
+      return section;
+    }
+
+    function renderListSection(title, data) {
+      const section = el('div', 'list-section');
+      section.appendChild(el('div', 'section-header', sectionHeader(title)));
+      data.forEach(item => {
+        const row = el('div', 'list-item');
+        row.appendChild(el('span', 'dot ' + item.color));
+        row.appendChild(el('span', 'list-item-text', terminalCase(item.text)));
+        section.appendChild(row);
+      });
+      return section;
+    }
+
+    function renderSidebar(data) {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.appendChild(renderNameBlock(data.nameBlock));
+      sidebar.appendChild(divider());
+      sidebar.appendChild(renderContact(data.contact));
+      sidebar.appendChild(divider());
+      sidebar.appendChild(renderKeyMetrics(data.keyMetrics));
+      sidebar.appendChild(divider());
+      sidebar.appendChild(renderTechStack(data.techStack));
+      sidebar.appendChild(divider());
+      sidebar.appendChild(renderCertifications(data.certifications));
+      sidebar.appendChild(divider());
+      sidebar.appendChild(renderListSection('Leadership Areas', data.leadershipAreas));
+      sidebar.appendChild(divider());
+      sidebar.appendChild(renderListSection('Languages', data.languages));
+    }
+
+    // === Main content render functions ===
+    function renderHeader(data) {
+      const section = el('div', 'header-section');
+      const title = el('div', 'header-title');
+      title.appendChild(el('span', 'header-prompt', '>'));
+      title.appendChild(el('span', 'header-name', data.name.toLowerCase()));
+      section.appendChild(title);
+      section.appendChild(el('div', 'header-sub', '// ' + data.subtitle.toLowerCase()));
+      return section;
+    }
+
+    function renderSummary(data) {
+      const section = el('div', 'summary');
+      section.appendChild(el('div', 'section-header', sectionHeader('Professional Summary')));
+      section.appendChild(el('p', 'summary-body', data.toLowerCase()));
+      return section;
+    }
+
+    function renderExperience(data) {
+      const section = el('div', 'experience');
+      section.appendChild(el('div', 'section-header', sectionHeader('Work Experience')));
+      data.forEach(role => {
+        const roleEl = el('div', 'role');
+        const header = el('div', 'role-header');
+        header.appendChild(el('span', 'role-title', '> ' + terminalCase(role.title)));
+        header.appendChild(el('span', 'role-date', dateBrackets(role.date)));
+        roleEl.appendChild(header);
+        roleEl.appendChild(el('div', 'role-company', companyLine(role.company, role.location)));
+        const bullets = el('div', 'role-bullets');
+        role.bullets.forEach(b => {
+          bullets.appendChild(el('div', 'bullet', bulletPrefix(b)));
+        });
+        roleEl.appendChild(bullets);
+        section.appendChild(roleEl);
+      });
+      return section;
+    }
+
+    function renderEducation(data) {
+      const section = el('div', 'education');
+      section.appendChild(el('div', 'section-header', sectionHeader('Education')));
+      data.forEach(edu => {
+        const item = el('div', 'edu-item');
+        const left = el('div', 'edu-left');
+        left.appendChild(el('div', 'edu-degree', '> ' + edu.degree.toLowerCase()));
+        left.appendChild(el('div', 'edu-school', companyLine(edu.school, edu.location)));
+        item.appendChild(left);
+        item.appendChild(el('span', 'edu-date', dateBrackets(edu.date)));
+        section.appendChild(item);
+      });
+      return section;
+    }
+
+    function renderAchievements(data) {
+      const section = el('div', 'achievements');
+      section.appendChild(el('div', 'section-header', sectionHeader('Notable Achievements')));
+      const grid = el('div', 'ach-grid');
+      data.forEach(ach => {
+        const card = el('div', 'ach-card');
+        card.appendChild(el('div', 'ach-icon', '[!]'));
+        card.appendChild(el('div', 'ach-text', ach.text.toLowerCase()));
+        grid.appendChild(card);
+      });
+      section.appendChild(grid);
+      return section;
+    }
+
+    function renderMain(data) {
+      const main = document.getElementById('main-content');
+      main.appendChild(renderHeader(data.header));
+      main.appendChild(divider(true));
+      main.appendChild(renderSummary(data.summary));
+      main.appendChild(divider());
+      main.appendChild(renderExperience(data.experience));
+      main.appendChild(divider());
+      main.appendChild(renderEducation(data.education));
+      main.appendChild(divider());
+      main.appendChild(renderAchievements(data.achievements));
+    }
+
+    // === Data loading ===
+    async function loadCV() {
+      try {
+        const res = await fetch('cv-data.json');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        document.title = data.meta.title;
+        renderSidebar(data.sidebar);
+        renderMain(data.main);
+      } catch (err) {
+        const main = document.getElementById('main-content');
+        const msg = el('div', 'summary');
+        msg.appendChild(el('div', 'section-header', '// error'));
+        const body = el('p', 'summary-body');
+        body.textContent = 'failed to load cv-data.json — ' + err.message + '\n\nif opening as a local file, serve it instead:\n  python3 -m http.server 8000';
+        body.style.whiteSpace = 'pre-wrap';
+        msg.appendChild(body);
+        main.appendChild(msg);
+      } finally {
+        const loading = document.getElementById('loading');
+        if (loading) loading.remove();
+      }
+    }
+
+    loadCV();
+  </script>
+</body>
+</html>

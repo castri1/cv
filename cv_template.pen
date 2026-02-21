@@ -1,0 +1,1979 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "84ADv",
+      "x": 0,
+      "y": 0,
+      "name": "cv_page",
+      "width": 1100,
+      "fill": "$bg-page",
+      "stroke": {
+        "align": "inside",
+        "thickness": {
+          "top": 3,
+          "right": 1,
+          "bottom": 1,
+          "left": 1
+        },
+        "fill": "$green-primary"
+      },
+      "children": [
+        {
+          "type": "frame",
+          "id": "R8ZWJ",
+          "name": "sidebar",
+          "width": 320,
+          "height": "fill_container",
+          "fill": "$bg-elevated",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "right": 1
+            },
+            "fill": "$border-primary"
+          },
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            40,
+            32
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "Co5Ld",
+              "name": "profile_photo",
+              "width": 120,
+              "height": 120,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771521361476.png",
+                "mode": "fill"
+              },
+              "stroke": {
+                "align": "outside",
+                "thickness": 2,
+                "fill": "$green-primary"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "wv56E",
+              "name": "name_block",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kHzjZ",
+                  "name": "prompt",
+                  "fill": "$green-primary",
+                  "content": "> alexander_mercer",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "ojjJv",
+                  "name": "titleText",
+                  "fill": "$text-primary",
+                  "content": "vp_of_software_engineering",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13
+                },
+                {
+                  "type": "text",
+                  "id": "GCy3k",
+                  "name": "subtitleText",
+                  "fill": "$text-secondary",
+                  "content": "// devops & ai leadership",
+                  "fontFamily": "IBM Plex Mono",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "eHXZQ",
+              "name": "divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "$border-primary"
+            },
+            {
+              "type": "frame",
+              "id": "PXtw3",
+              "name": "contact_section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JwGbo",
+                  "name": "contactHeader",
+                  "fill": "#FFFFFF",
+                  "content": "// contact_info",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "C9dmh",
+                  "name": "emailRow",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Owjsz",
+                      "name": "emailIcon",
+                      "fill": "$green-primary",
+                      "content": "$",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QgwkO",
+                      "name": "emailText",
+                      "fill": "$text-secondary",
+                      "content": "a.mercer@techcorp.io",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7Rv6I",
+                  "name": "phoneRow",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "1Kmgc",
+                      "name": "phoneIcon",
+                      "fill": "$green-primary",
+                      "content": "$",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vKCfO",
+                      "name": "phoneText",
+                      "fill": "$text-secondary",
+                      "content": "+1 (415) 555-0142",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Lqj6d",
+                  "name": "locRow",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SFWOZ",
+                      "name": "locIcon",
+                      "fill": "$green-primary",
+                      "content": "$",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "6Nrs6",
+                      "name": "locText",
+                      "fill": "$text-secondary",
+                      "content": "san_francisco, ca",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xIdRp",
+                  "name": "ghRow",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bCmFc",
+                      "name": "ghIcon",
+                      "fill": "$green-primary",
+                      "content": "$",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CFcD4",
+                      "name": "ghText",
+                      "fill": "$text-secondary",
+                      "content": "github.com/amercer",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PyWpx",
+                  "name": "liRow",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ZYL0C",
+                      "name": "liIcon",
+                      "fill": "$green-primary",
+                      "content": "$",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "y89J5",
+                      "name": "liText",
+                      "fill": "$text-secondary",
+                      "content": "linkedin.com/in/amercer",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QBDTS",
+              "name": "divider2",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "$border-primary"
+            },
+            {
+              "type": "frame",
+              "id": "4ds2w",
+              "name": "key_metrics",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "BmVug",
+                  "name": "metricsHeader",
+                  "fill": "#FFFFFF",
+                  "content": "// key_metrics",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "2BzaG",
+                  "name": "metric1",
+                  "width": "fill_container",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eTzgJ",
+                      "name": "m1val",
+                      "fill": "$text-primary",
+                      "content": "18+",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SG5mu",
+                      "name": "m1label",
+                      "fill": "$text-secondary",
+                      "content": "years_in_engineering",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NHNyh",
+                  "name": "metric2",
+                  "width": "fill_container",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DJhJT",
+                      "name": "m2val",
+                      "fill": "$text-primary",
+                      "content": "200+",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "icKeV",
+                      "name": "m2label",
+                      "fill": "$text-secondary",
+                      "content": "engineers_managed",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HPM4V",
+                  "name": "metric3",
+                  "width": "fill_container",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hPJ2c",
+                      "name": "m3val",
+                      "fill": "$green-primary",
+                      "content": "$85M",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ProAB",
+                      "name": "m3label",
+                      "fill": "$text-secondary",
+                      "content": "annual_budget_managed",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UZaHe",
+                  "name": "metric4",
+                  "width": "fill_container",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border-primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "4cKRf",
+                      "name": "m4val",
+                      "fill": "$text-primary",
+                      "content": "99.99%",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UiXkz",
+                      "name": "m4label",
+                      "fill": "$text-secondary",
+                      "content": "platform_uptime_achieved",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uvUeN",
+              "name": "divider3",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "$border-primary"
+            },
+            {
+              "type": "frame",
+              "id": "dBQDz",
+              "name": "tech_stack",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2dhGi",
+                  "name": "techHeader",
+                  "fill": "#FFFFFF",
+                  "content": "// tech_stack",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "iMBZi",
+                  "name": "skillRow1",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "4ztos",
+                      "name": "s1",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$green-primary"
+                      },
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "w8Azi",
+                          "name": "s1t",
+                          "fill": "$green-primary",
+                          "content": "kubernetes",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KYG9v",
+                      "name": "s2",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$green-primary"
+                      },
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "2rdMh",
+                          "name": "s2t",
+                          "fill": "$green-primary",
+                          "content": "terraform",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "W5bUY",
+                      "name": "s3",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$green-primary"
+                      },
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "AMuiY",
+                          "name": "s3t",
+                          "fill": "$green-primary",
+                          "content": "aws",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "B8yNh",
+                  "name": "skillRow2",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "1Pbxc",
+                      "name": "s4",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "T4rQu",
+                          "name": "s4t",
+                          "fill": "$text-primary",
+                          "content": "python",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "M4SEg",
+                      "name": "s5",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gUmsF",
+                          "name": "s5t",
+                          "fill": "$text-primary",
+                          "content": "go",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N6sKP",
+                      "name": "s6",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZFi1z",
+                          "name": "s6t",
+                          "fill": "$text-primary",
+                          "content": "rust",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "M9g7d",
+                  "name": "skillRow3",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nIpN1",
+                      "name": "s7",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "twmgL",
+                          "name": "s7t",
+                          "fill": "$text-primary",
+                          "content": "pytorch",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZzmIq",
+                      "name": "s8",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HhRjt",
+                          "name": "s8t",
+                          "fill": "$text-primary",
+                          "content": "llm_ops",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HYRt4",
+                      "name": "s9",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QPF6h",
+                          "name": "s9t",
+                          "fill": "$text-primary",
+                          "content": "ci/cd",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "b2toB",
+                  "name": "skillRow4",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nfLxO",
+                      "name": "s10",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ncMuK",
+                          "name": "s10t",
+                          "fill": "$text-primary",
+                          "content": "docker",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fveV3",
+                      "name": "s11",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "p76g0",
+                          "name": "s11t",
+                          "fill": "$text-primary",
+                          "content": "gcp",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sGSh5",
+                      "name": "s12",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "aHSMm",
+                          "name": "s12t",
+                          "fill": "$text-primary",
+                          "content": "mlflow",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JtE2d",
+              "name": "divider4",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "$border-primary"
+            },
+            {
+              "type": "frame",
+              "id": "DUjDw",
+              "name": "certifications",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tb5hp",
+                  "name": "certHeader",
+                  "fill": "#FFFFFF",
+                  "content": "// certifications",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "kvSo3",
+                  "name": "cert1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "T9RxM",
+                      "name": "c1name",
+                      "fill": "$text-primary",
+                      "content": "[aws] solutions architect pro",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11
+                    },
+                    {
+                      "type": "text",
+                      "id": "caGV2",
+                      "name": "c1date",
+                      "fill": "$text-secondary",
+                      "content": "2023",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UNU3Y",
+                  "name": "cert2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SIJR9",
+                      "name": "c2name",
+                      "fill": "$text-primary",
+                      "content": "[gcp] professional cloud architect",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11
+                    },
+                    {
+                      "type": "text",
+                      "id": "SIgpC",
+                      "name": "c2date",
+                      "fill": "$text-secondary",
+                      "content": "2022",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fw61C",
+                  "name": "cert3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ljFmu",
+                      "name": "c3name",
+                      "fill": "$text-primary",
+                      "content": "[cka] certified kubernetes admin",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11
+                    },
+                    {
+                      "type": "text",
+                      "id": "XEd5P",
+                      "name": "c3date",
+                      "fill": "$text-secondary",
+                      "content": "2021",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UQtl2",
+              "name": "divider5",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "$border-primary"
+            },
+            {
+              "type": "frame",
+              "id": "V2d4S",
+              "name": "leadership",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "egjz0",
+                  "name": "leaderHeader",
+                  "fill": "#FFFFFF",
+                  "content": "// leadership_areas",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "JqjZv",
+                  "name": "l1",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "R7DAP",
+                      "name": "l1dot",
+                      "fill": "$green-primary",
+                      "width": 6,
+                      "height": 6
+                    },
+                    {
+                      "type": "text",
+                      "id": "hqxl9",
+                      "name": "l1text",
+                      "fill": "$text-primary",
+                      "content": "engineering_strategy",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SVltd",
+                  "name": "l2",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "Jj0Eh",
+                      "name": "l2dot",
+                      "fill": "$green-primary",
+                      "width": 6,
+                      "height": 6
+                    },
+                    {
+                      "type": "text",
+                      "id": "yO8X9",
+                      "name": "l2text",
+                      "fill": "$text-primary",
+                      "content": "platform_architecture",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iyv3C",
+                  "name": "l3",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "Bk7Sm",
+                      "name": "l3dot",
+                      "fill": "$cyan-info",
+                      "width": 6,
+                      "height": 6
+                    },
+                    {
+                      "type": "text",
+                      "id": "8VnJi",
+                      "name": "l3text",
+                      "fill": "$text-primary",
+                      "content": "ai/ml_operations",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ruDEw",
+                  "name": "l4",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "0auRM",
+                      "name": "l4dot",
+                      "fill": "$cyan-info",
+                      "width": 6,
+                      "height": 6
+                    },
+                    {
+                      "type": "text",
+                      "id": "0mvCB",
+                      "name": "l4text",
+                      "fill": "$text-primary",
+                      "content": "devops_transformation",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "8TgBq",
+                  "name": "l5",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "lrNPx",
+                      "name": "l5dot",
+                      "fill": "$amber-warning",
+                      "width": 6,
+                      "height": 6
+                    },
+                    {
+                      "type": "text",
+                      "id": "K0bHz",
+                      "name": "l5text",
+                      "fill": "$text-primary",
+                      "content": "org_scaling_&_hiring",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zYBhJ",
+                  "name": "l6",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "xRQHo",
+                      "name": "l6dot",
+                      "fill": "$amber-warning",
+                      "width": 6,
+                      "height": 6
+                    },
+                    {
+                      "type": "text",
+                      "id": "RtliN",
+                      "name": "l6text",
+                      "fill": "$text-primary",
+                      "content": "budget_&_vendor_management",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "3tpve",
+          "name": "main_content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            40,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "dAepE",
+              "name": "header_section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "X2htp",
+                  "name": "headerTitle",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HphzT",
+                      "name": "headerPrompt",
+                      "fill": "$green-primary",
+                      "content": ">",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 32,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VISAj",
+                      "name": "headerName",
+                      "fill": "$text-primary",
+                      "content": "alexander mercer",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "B79nQ",
+                  "name": "headerSub",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "// vice president of software engineering, devops & artificial intelligence",
+                  "fontFamily": "IBM Plex Mono",
+                  "fontSize": 13
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "eKCDB",
+              "name": "header_divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "$green-primary"
+            },
+            {
+              "type": "frame",
+              "id": "7pDnf",
+              "name": "summary",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bQy8e",
+                  "name": "summaryHeader",
+                  "fill": "#FFFFFF",
+                  "content": "// professional_summary",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12
+                },
+                {
+                  "type": "text",
+                  "id": "xNAjM",
+                  "name": "summaryBody",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "engineering leader with 18+ years building and scaling high-performance engineering organizations. proven track record of transforming legacy infrastructure into modern cloud-native platforms, establishing devops culture across 200+ engineer teams, and pioneering production ai/ml systems that drive measurable business outcomes. passionate about developer experience, infrastructure automation, and building teams that ship with velocity and confidence.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "IBM Plex Mono",
+                  "fontSize": 13
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "V7CGU",
+              "name": "exp_divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "$border-primary"
+            },
+            {
+              "type": "frame",
+              "id": "tXza8",
+              "name": "experience",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tkvEt",
+                  "name": "expHeader",
+                  "fill": "#FFFFFF",
+                  "content": "// work_experience",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "lvndH",
+                  "name": "role_1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "2jyR3",
+                      "name": "r1header",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LuUUc",
+                          "name": "r1title",
+                          "fill": "$text-primary",
+                          "content": "> vp_of_engineering",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "3TGgp",
+                          "name": "r1date",
+                          "fill": "$green-primary",
+                          "content": "[2021 - present]",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "o3Mgq",
+                      "name": "r1company",
+                      "fill": "$text-secondary",
+                      "content": "$ nexuscloud inc. — san francisco, ca",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SFwEc",
+                      "name": "r1_bullets",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "2N3Qa",
+                          "name": "r1b1",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ led engineering org of 200+ across platform, ai/ml, and infrastructure teams delivering cloud-native saas products serving 50m+ users",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "61uDf",
+                          "name": "r1b2",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ architected company-wide devops transformation reducing deployment cycles from weekly to 50+ daily releases with zero-downtime",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "rLEDf",
+                          "name": "r1b3",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ built and shipped production llm inference platform handling 2b+ tokens/day, reducing ai infrastructure costs by 40%",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "uBfko",
+                          "name": "r1b4",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ established sre practice achieving 99.99% uptime across 15 microservices; drove incident response time from 45min to under 5min",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "OomKH",
+                  "name": "role_2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "kau3p",
+                      "name": "r2header",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UH49M",
+                          "name": "r2title",
+                          "fill": "$text-primary",
+                          "content": "> senior_director_of_engineering",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "d6Gc2",
+                          "name": "r2date",
+                          "fill": "$green-primary",
+                          "content": "[2017 - 2021]",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "sHw3L",
+                      "name": "r2company",
+                      "fill": "$text-secondary",
+                      "content": "$ dataforge systems — seattle, wa",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RJ8qe",
+                      "name": "r2_bullets",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "66lJ4",
+                          "name": "r2b1",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ scaled engineering team from 40 to 120 engineers across 8 squads; designed hiring pipeline yielding 92% offer-acceptance rate",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "EmyFY",
+                          "name": "r2b2",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ migrated monolithic architecture to kubernetes-based microservices, cutting infrastructure costs by 35% while improving p99 latency by 60%",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "FQT5q",
+                          "name": "r2b3",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ launched internal ml platform enabling data science teams to deploy models to production in hours instead of weeks",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "mJ6fG",
+                          "name": "r2b4",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ implemented gitops workflows with argocd and terraform, achieving full infrastructure-as-code coverage across 3 cloud regions",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "P1Zx3",
+                  "name": "role_3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "f4PmV",
+                      "name": "r3header",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "E3179",
+                          "name": "r3title",
+                          "fill": "$text-primary",
+                          "content": "> engineering_manager",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hce8y",
+                          "name": "r3date",
+                          "fill": "$green-primary",
+                          "content": "[2013 - 2017]",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "RHU2t",
+                      "name": "r3company",
+                      "fill": "$text-secondary",
+                      "content": "$ quantumstack labs — austin, tx",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N32kp",
+                      "name": "r3_bullets",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZxrLY",
+                          "name": "r3b1",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ managed 25-person backend engineering team building distributed real-time data processing pipelines handling 500k events/sec",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "RkrNH",
+                          "name": "r3b2",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ introduced ci/cd pipelines with jenkins and docker, reducing build times by 70% and eliminating manual deployment processes",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "g2535",
+                          "name": "r3b3",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ led adoption of infrastructure-as-code with terraform and ansible across all production environments",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EAyZE",
+                  "name": "role_4",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BD8ue",
+                      "name": "r4header",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cHl0i",
+                          "name": "r4title",
+                          "fill": "$text-primary",
+                          "content": "> senior_software_engineer",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Qzb6S",
+                          "name": "r4date",
+                          "fill": "$green-primary",
+                          "content": "[2008 - 2013]",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "S3h8R",
+                      "name": "r4company",
+                      "fill": "$text-secondary",
+                      "content": "$ corelogic technologies — new york, ny",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XiKSW",
+                      "name": "r4_bullets",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        0,
+                        0,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "TcC9r",
+                          "name": "r4b1",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ designed and implemented high-throughput api gateway processing 100k+ req/sec using go and redis cluster",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "6fFj0",
+                          "name": "r4b2",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "++ built early machine learning recommendation engine using scikit-learn, increasing user engagement by 28%",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jkmJ4",
+              "name": "edu_divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "$border-primary"
+            },
+            {
+              "type": "frame",
+              "id": "7sbA7",
+              "name": "education",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "M77Wi",
+                  "name": "eduHeader",
+                  "fill": "#FFFFFF",
+                  "content": "// education",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "R1AjH",
+                  "name": "edu1",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fGyPj",
+                      "name": "edu1left",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PG11k",
+                          "name": "edu1degree",
+                          "fill": "$text-primary",
+                          "content": "> m.s. computer science",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IkLkQ",
+                          "name": "edu1school",
+                          "fill": "$text-secondary",
+                          "content": "$ stanford university — specialization in distributed systems",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "NjpZQ",
+                      "name": "edu1date",
+                      "fill": "$green-primary",
+                      "content": "[2008]",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4SGvZ",
+                  "name": "edu2",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "CF5aq",
+                      "name": "edu2left",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "505Mh",
+                          "name": "edu2degree",
+                          "fill": "$text-primary",
+                          "content": "> b.s. computer engineering",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QNJgL",
+                          "name": "edu2school",
+                          "fill": "$text-secondary",
+                          "content": "$ mit — summa cum laude",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "GYmqd",
+                      "name": "edu2date",
+                      "fill": "$green-primary",
+                      "content": "[2006]",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ubV94",
+              "name": "ach_divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "$border-primary"
+            },
+            {
+              "type": "frame",
+              "id": "CtEYj",
+              "name": "achievements",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "y41vj",
+                  "name": "achHeader",
+                  "fill": "#FFFFFF",
+                  "content": "// notable_achievements",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "bPVyt",
+                  "name": "achGrid",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "drTvU",
+                      "name": "ach1",
+                      "width": "fill_container",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "o836X",
+                          "name": "ach1icon",
+                          "fill": "$green-primary",
+                          "content": "[!]",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NjIFP",
+                          "name": "ach1text",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "keynote speaker at kubecon 2023 on scaling ai workloads on kubernetes",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8j2Sv",
+                      "name": "ach2",
+                      "width": "fill_container",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8G0un",
+                          "name": "ach2icon",
+                          "fill": "$green-primary",
+                          "content": "[!]",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Xw9zn",
+                          "name": "ach2text",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "open-source maintainer of k8s-ai-operator (4.2k github stars)",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xJP1e",
+                      "name": "ach3",
+                      "width": "fill_container",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-primary"
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "A4eCj",
+                          "name": "ach3icon",
+                          "fill": "$green-primary",
+                          "content": "[!]",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "9U1Do",
+                          "name": "ach3text",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "patent holder: adaptive auto-scaling for ml inference workloads (us-2023-0184521)",
+                          "lineHeight": 1.6,
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 11
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "amber-warning": {
+      "type": "color",
+      "value": "#F59E0B"
+    },
+    "bg-active": {
+      "type": "color",
+      "value": "#1F1F1F"
+    },
+    "bg-elevated": {
+      "type": "color",
+      "value": "#0F0F0F"
+    },
+    "bg-page": {
+      "type": "color",
+      "value": "#0A0A0A"
+    },
+    "bg-sidebar": {
+      "type": "color",
+      "value": "#111111"
+    },
+    "border-primary": {
+      "type": "color",
+      "value": "#2a2a2a"
+    },
+    "cyan-info": {
+      "type": "color",
+      "value": "#06B6D4"
+    },
+    "green-primary": {
+      "type": "color",
+      "value": "#10B981"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#FAFAFA"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#6B7280"
+    },
+    "text-tertiary": {
+      "type": "color",
+      "value": "#4B5563"
+    }
+  }
+}
