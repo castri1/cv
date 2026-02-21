@@ -6,7 +6,7 @@
     "nameBlock": {
       "name": "Daniel Castrillon",
       "title": "Co-Founder / VP of SWE",
-      "subtitle": "DevSecOps & Engineering Leadership"
+      "subtitle": "Engineering Leadership, Cloud Architecture, and GenAI/LLM Applications Development"
     },
     "contact": [
       { "type": "email", "value": "castri1@hotmail.com" },
@@ -16,27 +16,24 @@
       { "type": "link", "value": "linkedin.com/in/danielcastrillon", "url": "https://linkedin.com/in/danielcastrillon" }
     ],
     "keyMetrics": [
-      { "value": "15+", "label": "Years in Engineering" },
-      { "value": "[TODO]", "label": "Engineers Managed" },
-      { "value": "$85M", "label": "[Your Metric Here]", "accent": true },
-      { "value": "[TODO]", "label": "[Your Metric Here]" }
+      { "value": "13+", "label": "Years in Engineering" },
+      { "value": "AWS Certified", "label": "8+ plus years working on AWS" },
+      { "value": "Startup Co-Founder", "label": "Co-founded 2 startups" },
+      { "value": "Hiring Success", "label": "Successfully hired 25+ engineers" }
     ],
     "techStack": [
-      { "skills": ["AWS", "React", ".NET"], "primary": true },
-      { "skills": ["JavaScript", "Node.js", "D3.js"] },
-      { "skills": ["DevSecOps", "GenAI/LLM", "CI/CD"] },
-      { "skills": ["Docker", "Python", "SQL"] }
+      { "skills": ["AWS", "Node.js/Typescript", "Python"], "primary": true },
+      { "skills": ["GenAI/LLM", "Agentic AI"] },
+      { "skills": ["Serverless Infrastructure", "Microservices", "CI/CD"] }
     ],
     "certifications": [
-      { "name": "[MIT] Innovation & Acceleration", "date": "2022" },
+      { "name": "[MIT] Innovation & Acceleration program", "date": "2022" },
       { "name": "[AWS] Certified Developer Associate", "date": "2020" },
       { "name": "[AWS] Cloud Architect Nanodegree", "date": "2020" }
     ],
     "leadershipAreas": [
       { "text": "Engineering Strategy", "color": "green" },
-      { "text": "Platform Architecture", "color": "green" },
-      { "text": "DevSecOps & Cloud", "color": "cyan" },
-      { "text": "Startup Co-Founding", "color": "cyan" },
+      { "text": "Cloud Architecture", "color": "green" },
       { "text": "Team Scaling & Hiring", "color": "amber" },
       { "text": "International Experience", "color": "amber" }
     ],
@@ -49,12 +46,12 @@
   "main": {
     "header": {
       "name": "Daniel Castrillon Cuartas",
-      "subtitle": "Co-Founder & VP of Software Engineering, DevSecOps"
+      "subtitle": "Co-Founder & VP of Software Engineering"
     },
-    "summary": "Engineering leader with 12+ years of experience spanning software development, DevSecOps, and startup co-founding. Dual-degree engineer (Colombia & France) with a Master's in Business Intelligence. Proven track record building engineering teams from the ground up, leading cloud-native transformations on AWS, and driving technical strategy across startups and consulting firms. Trilingual professional (Spanish, English, French) with deep international experience across Latin America and Europe.",
+    "summary": "Engineering leader with 13+ years of experience spanning software development, DevSecOps, and startup co-founding. Dual-degree engineer (Colombia & France) with a Master's in Business Intelligence. Proven track record building engineering teams from the ground up, leading cloud-native transformations on AWS, and driving technical strategy across startups and consulting firms. Trilingual professional (Spanish, English, French) with deep international experience across Latin America and Europe.",
     "experience": [
       {
-        "title": "Co-Founder / Director of SWE & DevSecOps",
+        "title": "Co-Founder / VP. of SWE & DevSecOps",
         "date": "2021 - Present",
         "company": "Melonn",
         "location": "Medellín, Colombia",
@@ -100,6 +97,12 @@
       }
     ],
     "education": [
+      {
+        "degree": "Technology Innovation & Acceleration Program",
+        "school": "MIT xPRO",
+        "location": "Remote",
+        "date": "2022"
+      },
       {
         "degree": "Master's, Business Intelligence",
         "school": "Universitat de Barcelona",
