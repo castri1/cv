@@ -71,7 +71,7 @@ export default function MainContent({ data }: Props) {
               color: "var(--text-primary)",
             }}
           >
-            {data.header.name.toLowerCase()}
+            {data.header.name}
           </span>
         </div>
         <div style={{ fontSize: 13, color: "var(--text-secondary)" }}>
