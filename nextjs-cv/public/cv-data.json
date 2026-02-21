@@ -1,144 +1,178 @@
 {
-  "meta": {
-    "title": "Daniel Castrillon Cuartas — CV"
-  },
-  "sidebar": {
-    "nameBlock": {
-      "name": "Daniel Castrillon",
-      "title": "Co-Founder / VP of SWE",
-      "subtitle": "Engineering Leadership, Cloud Architecture, and GenAI/LLM Applications Development"
-    },
-    "contact": [
-      { "type": "email", "value": "castri1@hotmail.com" },
-      { "type": "phone", "value": "+57 312 2932385" },
-      { "type": "location", "value": "Medellín, Colombia" },
-      { "type": "link", "value": "github.com/castri1", "url": "https://github.com/castri1" },
-      { "type": "link", "value": "linkedin.com/in/danielcastrillon", "url": "https://linkedin.com/in/danielcastrillon" }
-    ],
-    "keyMetrics": [
-      { "value": "13+", "label": "Years in Engineering" },
-      { "value": "AWS Certified", "label": "8+ plus years working on AWS" },
-      { "value": "Startup Co-Founder", "label": "Co-founded 2 startups" },
-      { "value": "Hiring Success", "label": "Successfully hired 25+ engineers" }
-    ],
-    "techStack": [
-      { "skills": ["AWS", "Node.js/Typescript", "Python"], "primary": true },
-      { "skills": ["GenAI/LLM", "Agentic AI"] },
-      { "skills": ["Serverless Infrastructure", "Microservices", "CI/CD"] }
-    ],
-    "certifications": [
-      { "name": "[DeepLearning.AI] MCP: Build Rich-Context AI Apps with Anthropic" },
-      { "name": "[DeepLearning.AI] Serverless Agentic Workflows with Amazon Bedrock" },
-      { "name": "[DeepLearning.AI] AI Agents in LangGraph" },
-      { "name": "[DeepLearning.AI] Reasoning with o1" },
-      { "name": "[DeepLearning.AI] Practical Multi AI Agents and Advanced Use Cases with crewAI" },
-      { "name": "[DeepLearning.AI] AI Agentic Design Patterns with AutoGen" },
-      { "name": "[DeepLearning.AI] Function-calling and data extraction with LLMs" },
-      { "name": "[DeepLearning.AI] Multi AI Agent Systems with crewAI" },
-      { "name": "[DeepLearning.AI] Preprocessing Unstructured Data for LLM Applications" },
-      { "name": "[DeepLearning.AI] Building Agentic RAG with Llamaindex" },
-      { "name": "[DeepLearning.AI] Building Applications with Vector Databases" },
-      { "name": "[DeepLearning.AI] ChatGPT Prompt Engineering for Developers" },
-      { "name": "[DeepLearning.AI] LangChain Chat with Your Data" },
-      { "name": "[Coursera] Generative AI with LLMs", "date": "2023" },
-      { "name": "[AWS] Certified Developer Associate", "date": "2020" },
-      { "name": "[AWS] Cloud Architect Nanodegree", "date": "2020" }
-    ],
-    "leadershipAreas": [
-      { "text": "Engineering Strategy", "color": "green" },
-      { "text": "Cloud Architecture", "color": "green" },
-      { "text": "Team Scaling & Hiring", "color": "amber" },
-      { "text": "International Experience", "color": "amber" }
-    ],
-    "languages": [
-      { "text": "Spanish (Native)", "color": "green" },
-      { "text": "English (Professional)", "color": "green" },
-      { "text": "French (Professional)", "color": "cyan" }
-    ]
-  },
-  "main": {
-    "header": {
-      "name": "Daniel Castrillon Cuartas",
-      "subtitle": "Co-Founder & VP of Software Engineering"
-    },
-    "summary": "Engineering leader with 13+ years of experience architecting, building, and scaling cloud-native platforms across startup and consulting environments. Strong technical foundation in distributed systems and AWS-based infrastructure, with a proven ability to establish engineering standards, delivery practices, and scalable architectures from early-stage to growth. Experienced in hiring and mentoring high-performing teams, defining technical roadmaps, and aligning engineering execution with product goals. \n\nPassionate about the startup ecosystem, serving as a trusted technical advisor to startups in Colombia, guiding architecture, technology selection, and platform design to help them scale effectively. Active contributor to the regional tech community, including speaking at industry events and collaborating with AWS initiatives to foster communities of technology leaders in Colombia. Currently leading organization-wide AI adoption—partnering across engineering, product, operations, and business functions to embed AI into workflows, decision-making, and new product capabilities that drive efficiency and unlock revenue opportunities. Trilingual (Spanish, English, French) with professional experience across Colombia and the United States.",
-    "experience": [
-      {
-        "title": "Co-Founder / VP. of SWE",
-        "date": "2021 - Present",
-        "company": "Melonn",
-        "location": "Medellín, Colombia",
-        "bullets": [
-          "Co-founded logistics-tech startup, architecting the engineering organization and cloud-native infrastructure from day one on AWS",
-          "Established DevSecOps practices, CI/CD pipelines, and security-first development culture across the engineering team",
-          "Co-led a company-wide organizational and architectural transformation from a monolithic structure to a domain-driven microservices ecosystem, enabling autonomous squads and unlocking parallel product development and regional scalability.",
-          "Operated across multiple leadership roles—including Cloud Architect and Product Manager for Transportation, Monetization, and Support domains—designing and delivering products that improved operational efficiency and enabled new service capabilities.",
-          "Defined and implemented a standardized, repeatable technology stack and deployment model, enabling rapid environment replication, automation-first operations, and consistent onboarding of new teams and services.",
-          "Partnered with operations, internal and external clients to translate logistics, support and fulfillment challenges into scalable technical solutions; led technical due diligence processes with strategic partners and customers.",
-          "Built the engineering function from the ground up: hired and mentored 25+ engineers, defined role architecture and career ladders",
-          "Designed and institutionalized the development lifecycle, aligning engineering execution with product management through agile practices, quarterly planning, and OKR-driven delivery.",
-          "Architected and implemented the company’s disaster recovery plan and reliability strategy.",
-          "Driving cultural adoption through hands-on leadership, mentoring teams on how to incorporate AI into daily development, decision-making, and automation processes."
-        ]
-      },
-      {
-        "title": "Director of Software Engineering",
-        "date": "2018 - 2021",
-        "company": "Mutek",
-        "location": "Medellín, Colombia",
-        "bullets": [
-          "Directed software engineering team delivering digital products for diverse client portfolio",
-          "Drove technical strategy, architecture decisions, and cloud migration initiatives",
-          "Mentored engineering leads and established agile development practices across the organization",
-          "Oversaw end-to-end product delivery lifecycle from requirements to production deployment"
-        ]
-      },
-      {
-        "title": "Senior .NET Developer",
-        "date": "2017 - 2018",
-        "company": "MAS Global Consulting",
-        "location": "Colombia",
-        "bullets": [
-          "Developed enterprise applications using .NET ecosystem for US-based consulting clients",
-          "Designed and implemented backend services and RESTful APIs for business-critical systems",
-          "Collaborated with distributed engineering teams across Colombia and the United States"
-        ]
-      },
-      {
-        "title": "Co-Founder",
-        "date": "2014 - 2017",
-        "company": "Vaado Information Technologies",
-        "location": null,
-        "bullets": [
-          "Co-founded technology company delivering custom software solutions and IT consulting services",
-          "Led technical development, client delivery, and built the engineering team from scratch"
-        ]
-      }
-    ],
-    "education": [
-      {
-        "degree": "Technology Innovation & Acceleration Program",
-        "school": "MIT xPRO",
-        "location": "Remote",
-        "date": "2022"
-      },
-      {
-        "degree": "Master's, Business Intelligence",
-        "school": "Universitat de Barcelona",
-        "location": "Spain",
-        "date": "2015 - 2016"
-      },
-      {
-        "degree": "Mechatronics Engineering",
-        "school": "Universidad EIA",
-        "location": "Medellín, Colombia (Dual Degree w/ ENIM, France)",
-        "date": "2006 - 2012"
-      }
-    ],
-    "achievements": [
-      { "title": "International Scholarship", "text": "ENIM scholarship 2010 - 2012" },
-      { "title": "Academic Excellence", "text": "Best GPA of the semester 2009 at Universidad EIA" },
-      { "title": "Academic Excellence", "text": "Best GPA of the semester 2007 at Universidad EIA" }
-    ]
-  }
+	"meta": {
+		"title": "Daniel Castrillon Cuartas — CV"
+	},
+	"sidebar": {
+		"nameBlock": {
+			"name": "Daniel Castrillon",
+			"title": "Co-Founder / VP of SWE",
+			"subtitle": "Engineering Leadership, Cloud Architecture, and GenAI/LLM Applications Development"
+		},
+		"contact": [
+			{ "type": "email", "value": "castri1@hotmail.com" },
+			{ "type": "phone", "value": "+57 312 2932385" },
+			{ "type": "location", "value": "Medellín, Colombia" },
+			{
+				"type": "link",
+				"value": "github.com/castri1",
+				"url": "https://github.com/castri1"
+			},
+			{
+				"type": "link",
+				"value": "linkedin.com/in/danielcastrillon",
+				"url": "https://linkedin.com/in/danielcastrillon"
+			}
+		],
+		"keyMetrics": [
+			{ "value": "13+", "label": "Years in Engineering" },
+			{ "value": "8+", "label": "Years working on AWS" },
+			{ "value": "25+", "label": "Engineers managed" }
+		],
+		"techStack": [
+			{ "skills": ["AWS", "Node.js/Typescript", "Python"], "primary": true },
+			{ "skills": ["GenAI/LLM", "Agentic AI"] },
+			{ "skills": ["Serverless Infrastructure", "Microservices", "CI/CD"] }
+		],
+		"certifications": [
+			{
+				"name": "[DeepLearning.AI] MCP: Build Rich-Context AI Apps with Anthropic"
+			},
+			{
+				"name": "[DeepLearning.AI] Serverless Agentic Workflows with Amazon Bedrock"
+			},
+			{ "name": "[DeepLearning.AI] AI Agents in LangGraph" },
+			{ "name": "[DeepLearning.AI] Reasoning with o1" },
+			{
+				"name": "[DeepLearning.AI] Practical Multi AI Agents and Advanced Use Cases with crewAI"
+			},
+			{ "name": "[DeepLearning.AI] AI Agentic Design Patterns with AutoGen" },
+			{
+				"name": "[DeepLearning.AI] Function-calling and data extraction with LLMs"
+			},
+			{ "name": "[DeepLearning.AI] Multi AI Agent Systems with crewAI" },
+			{
+				"name": "[DeepLearning.AI] Preprocessing Unstructured Data for LLM Applications"
+			},
+			{ "name": "[DeepLearning.AI] Building Agentic RAG with Llamaindex" },
+			{
+				"name": "[DeepLearning.AI] Building Applications with Vector Databases"
+			},
+			{ "name": "[DeepLearning.AI] ChatGPT Prompt Engineering for Developers" },
+			{ "name": "[DeepLearning.AI] LangChain Chat with Your Data" },
+			{ "name": "[Coursera] Generative AI with LLMs", "date": "2023" },
+			{ "name": "[AWS] Certified Developer Associate", "date": "2020" },
+			{ "name": "[AWS] Cloud Architect Nanodegree", "date": "2020" }
+		],
+		"leadershipAreas": [
+			{ "text": "Engineering Strategy", "color": "green" },
+			{ "text": "Cloud Architecture", "color": "green" },
+			{ "text": "Team Scaling & Hiring", "color": "amber" },
+			{ "text": "International Experience", "color": "amber" }
+		],
+		"languages": [
+			{ "text": "Spanish (Native)", "color": "green" },
+			{ "text": "English (Professional)", "color": "green" },
+			{ "text": "French (Professional)", "color": "cyan" }
+		]
+	},
+	"main": {
+		"header": {
+			"name": "Daniel Castrillon Cuartas",
+			"subtitle": "Co-Founder & VP of Software Engineering"
+		},
+		"summary": [
+			"Engineering leader with 13+ years of experience architecting, building, and scaling cloud-native platforms across startup and consulting environments. Strong technical foundation in distributed systems and AWS-based infrastructure, with a proven ability to establish engineering standards, delivery practices, and scalable architectures from early-stage to growth.",
+			"Co-founder of a logistics-tech startup, responsible for building the engineering team and platform from day one. Launched the initial product in 3 months, scaled operations to Mexico and Colombia, and supported the growth of a 400+ employee company and now serving 250+ clients.",
+			"Experienced in hiring and mentoring high-performing teams, defining technical roadmaps, and aligning engineering execution with product goals. Passionate about the startup ecosystem, serving as a trusted technical advisor to other startups in Colombia, guiding architecture, technology selection, and platform design to help them scale effectively.",
+			"Active contributor to the regional tech community, including speaking at industry events and collaborating with AWS initiatives to foster communities of technology leaders. Currently leading organization-wide AI adoption—partnering across engineering, product, operations, and business functions to embed AI into workflows, decision-making, and new product capabilities that drive efficiency and unlock revenue opportunities.",
+			"Trilingual (Spanish, English, French) with professional experience across Colombia and the United States."
+		],
+		"experience": [
+			{
+				"title": "Co-Founder / VP. of SWE",
+				"date": "2021 - Present",
+				"company": "Melonn",
+				"location": "Medellín, Colombia",
+				"bullets": [
+					"Co-founded a logistics-tech startup, architecting the engineering organization and cloud-native infrastructure from inception on AWS; launched the production platform in 3 months and scaled operations across Mexico and Colombia. The company has since grown to 400+ employees across both countries and raised $25M+ across Seed, Series A, and extension rounds.",
+					"Established DevSecOps practices, CI/CD pipelines, and a security-first development culture, automating more than 80 build, test, and deployment workflows. ",
+					"Co-led the transition from a monolithic architecture to a domain-driven microservices ecosystem, reducing cross-team dependencies by ~80% and enabling autonomous squads to deliver in parallel. ",
+					"Operated across multiple leadership roles—including Cloud Architect and Product Manager for Transportation, Monetization, and Support domains—delivering solutions that enabled new pricing and revenue capabilities adopted by 400+ clients. ",
+					"Defined and implemented a standardized, repeatable technology stack and deployment model to support automation-first operations and consistent onboarding of new teams and services. ",
+					"Partnered with operations and external stakeholders to translate logistics and fulfillment challenges into scalable technical solutions; led technical due diligence for 6 strategic partnerships. ",
+					"Built the engineering function from the ground up, scaling the team from 0 to 25+ engineers while achieving 95% retention from inception to present; established role definitions, career ladders, and mentoring practices. ",
+					"Designed and institutionalized the development lifecycle, aligning engineering execution with product management through agile practices, quarterly planning, and OKR-driven delivery. ",
+					"Architected and implemented the company’s disaster recovery and reliability strategy, establishing an RTO of <1.5 hours to ensure business continuity. ",
+					"Driving cultural adoption through hands-on leadership, mentoring teams on how to incorporate AI into daily development, decision-making, and automation processes. "
+				]
+			},
+			{
+				"title": "Director of Software Engineering",
+				"date": "2018 - 2021",
+				"company": "Mutek",
+				"location": "Medellín, Colombia",
+				"bullets": [
+					"Directed software engineering team delivering digital products for diverse client portfolio",
+					"Drove technical strategy, architecture decisions, and cloud migration initiatives",
+					"Mentored engineering leads and established agile development practices across the organization",
+					"Oversaw end-to-end product delivery lifecycle from requirements to production deployment"
+				]
+			},
+			{
+				"title": "Senior .NET Developer",
+				"date": "2017 - 2018",
+				"company": "MAS Global Consulting",
+				"location": "Colombia",
+				"bullets": [
+					"Developed enterprise applications using .NET ecosystem for US-based consulting clients",
+					"Designed and implemented backend services and RESTful APIs for business-critical systems",
+					"Collaborated with distributed engineering teams across Colombia and the United States"
+				]
+			},
+			{
+				"title": "Co-Founder",
+				"date": "2014 - 2017",
+				"company": "Vaado Information Technologies",
+				"location": null,
+				"bullets": [
+					"Co-founded technology company delivering custom software solutions and IT consulting services",
+					"Led technical development, client delivery, and built the engineering team from scratch"
+				]
+			}
+		],
+		"education": [
+			{
+				"degree": "Technology Innovation & Acceleration Program",
+				"school": "MIT xPRO",
+				"location": "Remote",
+				"date": "2022"
+			},
+			{
+				"degree": "Master's, Business Intelligence",
+				"school": "Universitat de Barcelona",
+				"location": "Spain",
+				"date": "2015 - 2016"
+			},
+			{
+				"degree": "Mechatronics Engineering",
+				"school": "Universidad EIA",
+				"location": "Medellín, Colombia (Dual Degree w/ ENIM, France)",
+				"date": "2006 - 2012"
+			}
+		],
+		"achievements": [
+			{
+				"title": "International Scholarship",
+				"text": "ENIM scholarship 2010 - 2012"
+			},
+			{
+				"title": "Academic Excellence",
+				"text": "Best GPA of the semester 2009 at Universidad EIA"
+			},
+			{
+				"title": "Academic Excellence",
+				"text": "Best GPA of the semester 2007 at Universidad EIA"
+			}
+		]
+	}
 }
