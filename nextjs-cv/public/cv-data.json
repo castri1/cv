@@ -27,7 +27,20 @@
       { "skills": ["Serverless Infrastructure", "Microservices", "CI/CD"] }
     ],
     "certifications": [
-      { "name": "[MIT] Innovation & Acceleration program", "date": "2022" },
+      { "name": "[DeepLearning.AI] MCP: Build Rich-Context AI Apps with Anthropic" },
+      { "name": "[DeepLearning.AI] Serverless Agentic Workflows with Amazon Bedrock" },
+      { "name": "[DeepLearning.AI] AI Agents in LangGraph" },
+      { "name": "[DeepLearning.AI] Reasoning with o1" },
+      { "name": "[DeepLearning.AI] Practical Multi AI Agents and Advanced Use Cases with crewAI" },
+      { "name": "[DeepLearning.AI] AI Agentic Design Patterns with AutoGen" },
+      { "name": "[DeepLearning.AI] Function-calling and data extraction with LLMs" },
+      { "name": "[DeepLearning.AI] Multi AI Agent Systems with crewAI" },
+      { "name": "[DeepLearning.AI] Preprocessing Unstructured Data for LLM Applications" },
+      { "name": "[DeepLearning.AI] Building Agentic RAG with Llamaindex" },
+      { "name": "[DeepLearning.AI] Building Applications with Vector Databases" },
+      { "name": "[DeepLearning.AI] ChatGPT Prompt Engineering for Developers" },
+      { "name": "[DeepLearning.AI] LangChain Chat with Your Data" },
+      { "name": "[Coursera] Generative AI with LLMs", "date": "2023" },
       { "name": "[AWS] Certified Developer Associate", "date": "2020" },
       { "name": "[AWS] Cloud Architect Nanodegree", "date": "2020" }
     ],
@@ -48,7 +61,7 @@
       "name": "Daniel Castrillon Cuartas",
       "subtitle": "Co-Founder & VP of Software Engineering"
     },
-    "summary": "Engineering leader with 13+ years of experience spanning software development, DevSecOps, and startup co-founding. Dual-degree engineer (Colombia & France) with a Master's in Business Intelligence. Proven track record building engineering teams from the ground up, leading cloud-native transformations on AWS, and driving technical strategy across startups and consulting firms. Trilingual professional (Spanish, English, French) with deep international experience across Latin America and Europe.",
+    "summary": "Engineering leader with 13+ years of experience architecting, building, and scaling cloud-native platforms across startup and consulting environments. Strong technical foundation in distributed systems and AWS-based infrastructure, with a proven ability to establish engineering standards, delivery practices, and scalable architectures from early-stage to growth. Experienced in hiring and mentoring high-performing teams, defining technical roadmaps, and aligning engineering execution with product goals. \n\nPassionate about the startup ecosystem, serving as a trusted technical advisor to startups in Colombia, guiding architecture, technology selection, and platform design to help them scale effectively. Active contributor to the regional tech community, including speaking at industry events and collaborating with AWS initiatives to foster communities of technology leaders in Colombia. Currently leading organization-wide AI adoption—partnering across engineering, product, operations, and business functions to embed AI into workflows, decision-making, and new product capabilities that drive efficiency and unlock revenue opportunities. Trilingual (Spanish, English, French) with professional experience across Colombia and the United States.",
     "experience": [
       {
         "title": "Co-Founder / VP. of SWE",
@@ -123,9 +136,9 @@
       }
     ],
     "achievements": [
-      { "text": "[TODO] Add your notable achievement here" },
-      { "text": "[TODO] Add your notable achievement here" },
-      { "text": "[TODO] Add your notable achievement here" }
+      { "title": "International Scholarship", "text": "ENIM scholarship 2010 - 2012" },
+      { "title": "Academic Excellence", "text": "Best GPA of the semester 2009 at Universidad EIA" },
+      { "title": "Academic Excellence", "text": "Best GPA of the semester 2007 at Universidad EIA" }
     ]
   }
 }
