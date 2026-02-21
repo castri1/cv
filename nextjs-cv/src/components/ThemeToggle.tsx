@@ -23,9 +23,6 @@ export default function ThemeToggle() {
       onClick={toggle}
       className="theme-toggle"
       style={{
-        position: "fixed",
-        top: 12,
-        right: 12,
         fontFamily: "var(--cv-font-code)",
         fontSize: 12,
         color: "var(--green-primary)",
@@ -33,7 +30,6 @@ export default function ThemeToggle() {
         border: "1px solid var(--green-primary)",
         padding: "4px 12px",
         cursor: "pointer",
-        zIndex: 1000,
         transition: "background 0.2s, color 0.2s",
       }}
       onMouseEnter={(e) => {

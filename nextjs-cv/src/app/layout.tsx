@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
+import PrintButton from "@/components/PrintButton";
 
 const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500"],
@@ -20,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Daniel Castrillon Cuartas — CV",
   description:
-    "Engineering leader with 15+ years spanning software development, DevSecOps, and startup co-founding.",
+    "Engineering leader with 13+ years of experience architecting, building, and scaling cloud-native platforms across startups and consulting environments.",
 };
 
 export default function RootLayout({
@@ -32,7 +33,20 @@ export default function RootLayout({
     <html lang="en" data-theme="light" className={`${ibmPlexMono.variable} ${jetbrainsMono.variable}`}>
       <body style={{ fontFamily: "var(--font-ibm-plex-mono), monospace" }}>
         <div className="mobile-topbar" />
-        <ThemeToggle />
+        <div
+          className="toolbar-buttons"
+          style={{
+            position: "fixed",
+            top: 12,
+            right: 12,
+            display: "flex",
+            gap: 8,
+            zIndex: 1000,
+          }}
+        >
+          <PrintButton />
+          <ThemeToggle />
+        </div>
         {children}
       </body>
     </html>

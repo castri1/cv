@@ -48,16 +48,6 @@
   }
 }
 
-@media print {
-  body {
-    background: var(--bg-page) !important;
-  }
-
-  .theme-toggle {
-    display: none !important;
-  }
-}
-
 /* contact links */
 .contact-link {
   color: var(--text-secondary);
@@ -181,7 +171,47 @@
 }
 
 @media print {
-  .sidebar-hamburger {
+  @page {
+    size: A4 landscape;
+    margin: 8mm;
+  }
+
+  body {
+    zoom: 0.8;
+    background: var(--bg-page) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hide UI chrome */
+  .toolbar-buttons,
+  .sidebar-hamburger,
+  .sidebar-backdrop,
+  .mobile-topbar {
     display: none !important;
+  }
+
+  /* Reset page wrapper */
+  .cv-page-wrapper {
+    padding: 0 !important;
+    min-height: 0 !important;
+    background: var(--bg-page) !important;
+  }
+
+  /* Force row layout */
+  .cv-layout {
+    flex-direction: row !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Restore sidebar from mobile slide-in to normal flow */
+  .sidebar-panel {
+    position: static !important;
+    transform: none !important;
+    width: 320px !important;
+    min-width: 320px !important;
+    display: flex !important;
+    overflow: visible !important;
   }
 }
