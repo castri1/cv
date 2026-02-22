@@ -26,7 +26,7 @@ export default function PrintButton() {
           .trim() || "#0A0A0A",
       });
 
-      // Convert canvas pixels to mm (96dpi → mm: px / scale * 25.4 / 96)
+      // canvas is scale× the element's CSS pixels; convert back to mm at 96dpi
       const pxToMm = (px: number) => (px / scale * 25.4) / 96;
       const pageW = pxToMm(canvas.width);
       const pageH = pxToMm(canvas.height);

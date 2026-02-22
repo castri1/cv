@@ -87,16 +87,11 @@
     z-index: 1050;
   }
 
-  .theme-toggle {
-    z-index: 1100 !important;
+  .toolbar-buttons {
     top: 8px !important;
     right: 20px !important;
-    height: 36px !important;
-    display: inline-flex !important;
+    z-index: 1100 !important;
     align-items: center !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    border-radius: 4px;
   }
 
   .cv-page-wrapper {

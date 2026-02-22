@@ -41,7 +41,7 @@ export default function RootLayout({
             right: 12,
             display: "flex",
             gap: 8,
-            zIndex: 1000,
+            zIndex: 1100,
           }}
         >
           <PrintButton />
